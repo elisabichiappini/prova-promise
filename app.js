@@ -1,12 +1,11 @@
-// const condizione = true;
 
-// const promise = new Promise((resolve, reject) => {
-//     if(condizione) {
-//         resolve('ok')
-//     } else {
-//         reject('no')
-//     }
-// })
-//math.random : randomizza un numero da 0 a 1 con virgola, e math.round : arrotonda 
-const isConnectToServer = Math.round(Math.random());
-console.log(isConnectToServer); //comando npm run dev
+const promise = new Promise((resolve, reject) => {
+    const isConnectToServer = Math.round(Math.random());
+    if(isConnectToServer) {
+        resolve('ok sei connesso')
+    } else {
+        reject('non sei connesso!!!!')
+    }
+})
+promise.then(mess => console.log(mess))
+.catch(err => console.error(err))
