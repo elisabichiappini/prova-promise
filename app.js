@@ -50,3 +50,4 @@ const fetch = (url) => new Promise((resolve, reject) => {
 fetch('http://blaVla.com')
     .then(mess => console.log(mess))
     .catch(err => console.error('ERROR:', err));
+//npm run dev
